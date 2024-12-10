@@ -17,7 +17,7 @@ if __name__ == "__main__":
     try:
         text="HELLO"
         caesar_shift=3
-s
+
         # Encrypt and Decrypt with Caesar Cipher
         caesar_encrypted =caesar_encrypt( text, caesar_shift)
         caesar_decrypted = caesar_decrypt( caesar_encrypted, caesar_shift)
