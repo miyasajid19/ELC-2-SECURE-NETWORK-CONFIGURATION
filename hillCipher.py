@@ -43,9 +43,9 @@ def hill_decrypt(ciphertext, key_matrix):
 if __name__ == "__main__":
     try:
         # Input from the user
-        text = input("Enter the text to encrypt: ").strip()
-        key = input("Enter the key for the cipher (alphabetic characters only): ").strip()
-        n = int(input("Enter the size of the key matrix (e.g., 2 for 2x2, 3 for 3x3): "))
+        text = "ACT"
+        key = "GYBNQKURP"
+        n = 3
 
         # Generate key matrix
         hill_key_matrix = generate_key_matrix(key, n)
@@ -62,9 +62,3 @@ if __name__ == "__main__":
         print(f"Error: {ve}")
     except Exception as e:
         print(f"An error occurred: {e}")
-    
-    """
-    ACT
-    GYBNQKURP
-    POH
-    """
