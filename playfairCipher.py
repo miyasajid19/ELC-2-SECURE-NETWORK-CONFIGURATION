@@ -70,7 +70,7 @@ def decrypt(cipher_text, key):
 if __name__ == "__main__":
     try:
         text="ONCEAXAVERIANALWAYSAXAVERIAN"
-        playfair_key = "SXCMAITIGHAR"
+        playfair_key = "SECTION I"
         # Encrypt and Decrypt with Playfair Cipher
         playfair_encrypted= encrypt( text, playfair_key)
         playfair_decrypted= decrypt( playfair_encrypted, playfair_key)
@@ -80,7 +80,7 @@ if __name__ == "__main__":
         print("Original Text  :: ",text)
         print("Playfair Key   :: ",playfair_key)
         print("Encrypted Text :: ",playfair_encrypted)
-        print("Encrypted Text :: ",playfair_decrypted)
+        print("Decrypted Text :: ",playfair_decrypted)
         print(f"Playfair Cipher Match: {text.replace(' ', '').lower() == playfair_decrypted}")
 
     except FileNotFoundError:
