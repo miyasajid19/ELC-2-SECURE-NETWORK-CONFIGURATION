@@ -15,15 +15,16 @@ def caesar_decrypt(text, shift):
 # Main Function
 if __name__ == "__main__":
     try:
-        text="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-        caesar_shift=4
-
+        text="HELLO"
+        caesar_shift=3
+s
         # Encrypt and Decrypt with Caesar Cipher
         caesar_encrypted =caesar_encrypt( text, caesar_shift)
         caesar_decrypted = caesar_decrypt( caesar_encrypted, caesar_shift)
         print("Original Text ::",text)
         print("Caeser Shift ::",caesar_shift)
         print("Encrypted Text ::",caesar_encrypted)
+        print("Decrypted Text ::",caesar_decrypted)
         # Verification (Match Texts)
         print("Verification Results:")
         print(f"Caesar Cipher Match: {text == caesar_decrypted}")
