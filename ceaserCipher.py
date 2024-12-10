@@ -16,7 +16,7 @@ def caesar_decrypt(text, shift):
 if __name__ == "__main__":
     try:
         text="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-        caesar_shift=26
+        caesar_shift=4
 
         # Encrypt and Decrypt with Caesar Cipher
         caesar_encrypted =caesar_encrypt( text, caesar_shift)
